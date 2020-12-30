@@ -4,6 +4,6 @@ phases:
   install:
     commands:
       - echo
-      - yum install mysql
+      - yum install -y mysql
       - echo "instalation done "
       - mysql --host=ntier.cvvkrojoestg.us-east-1.rds.amazonaws.com --port=3306 --user=admin --password=password ntier
