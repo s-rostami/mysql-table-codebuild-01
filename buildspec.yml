@@ -9,6 +9,6 @@ phases:
       - echo "connecting to the database"
       - mysql --host=ntier.cvvkrojoestg.us-east-1.rds.amazonaws.com --port=3306 --user=admin --password=password ntier
       - echo "creating the name table"
-      - mysql SHOW TABLES;
-      - mysql CREATE TABLE users (name VARCHAR(20), email VARCHAR(20));
-      - mysql SHOW TABLES;
+      - mysql show tables ntier;
+      - mysql create table users (name VARCHAR(20), email VARCHAR(20));
+      - mysql show tables;
