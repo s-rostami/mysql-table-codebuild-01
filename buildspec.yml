@@ -3,7 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo
+      - echo "installing mysql client"
       - yum install -y mysql
-      - echo "instalation done "
+      - echo "mysql client instalation done "
+      - echo "connecting to the database"
       - mysql --host=ntier.cvvkrojoestg.us-east-1.rds.amazonaws.com --port=3306 --user=admin --password=password ntier
+      - echo "creating the name table"
+      - mysql SHAW TABLES
+      - mysql CREATE TABLE name (name VARCHAR(20), email VARCHAR(20));
+      - mysql SHAW TABLES
