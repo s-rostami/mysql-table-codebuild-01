@@ -8,5 +8,5 @@ phases:
       - echo "mysql client instalation done "
       - echo "connecting to the database"
       - mysql --host=ntier.cvvkrojoestg.us-east-1.rds.amazonaws.com --port=3306 --user=admin --password=password ntier -e "SHOW TABLES; CREATE TABLE users5 (name VARCHAR(20), email VARCHAR(20));"
-      - mysql -e "INSERT INTO users4 (name, email) VALUES ("user1", "user1-gmail.com"); SELECT * FROM users;"
+      - mysql --host=ntier.cvvkrojoestg.us-east-1.rds.amazonaws.com --port=3306 --user=admin --password=password ntier -e "INSERT INTO users5 (name, email) VALUES ("user1", "user1-gmail.com"); SELECT * FROM users;"
      
